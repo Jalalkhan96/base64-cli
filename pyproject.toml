@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "base64-cli"
+version = "1.0.0"
+description = "Base64 encode/decode from the command line (standard or URL-safe alphabet)"
+authors = [{name = "Jalal Khan"}]
+requires-python = ">=3.9"
+
+[project.scripts]
+b64 = "b64_cli.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["b64_cli*"]
